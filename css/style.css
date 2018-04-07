@@ -40,6 +40,7 @@ header {
 .header-button:hover {
 	color: #fff;
 	background: #eb8007;
+	transition: 0.2s;
 }
 header small {
 	font-size: 12px;
@@ -147,6 +148,7 @@ footer {
 .footer-button:hover {
 	color: black;
 	background-color: white;
+	transition: 0.2s;
 }
 
 @media (max-width: 1200px) {

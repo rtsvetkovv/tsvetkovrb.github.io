@@ -13,6 +13,7 @@
 		<title>Роман Цветков - создание сайтов</title>
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="shortcut icon" href="img/main-img.png" type="image/png">
 	</head>
@@ -21,14 +22,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-7">
-						<img class="header-img" src="img/main-img.png" alt="logo">
+						<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="logo">
 					</div>
 					<!-- /.col-7 -->
 					<div class="col-lg-5">
-						<p class="header-pretitle">	Веб разработчик</p>
-						<h1 class="header-title">Роман Цветков</h1>
-						<p class="header-subtitle"> Верстка на HTML/CSS <br/> Разработка сайтов под ключ</p>
-						<div class="header-button-block">
+						<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.2s">Веб разработчик</p>
+						<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.1s">Роман Цветков</h1>
+						<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s"> Верстка на HTML/CSS <br/> Разработка сайтов под ключ</p>
+						<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 							<a href="https://vk.me/tsvetkovrb" target="_blank" class="header-button">Связаться</a>
 							<small>*Это бесплатно</small>
 						</div>
@@ -39,7 +40,7 @@
 			</div>
 			<!-- /.container -->
 		</header>
-		<section class="portfolio">
+		<section class="portfolio wow fadeInUp" data-wow-delay="0.5s">
 			<div class="container">
 				<div class="portfolio-block">
 					<h2 class="portfolio-title">Портфолио</h2>
@@ -71,22 +72,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
-						<h4 class="footer-author">Роман Цветков</h4>
-						<p class="footer-text">Разработка сайтов под ключ</p>
+						<h4 class="footer-author wow bounceInLeft" data-wow-delay="0.1s">Роман Цветков</h4>
+						<p class="footer-text wow bounceInLeft" data-wow-delay="0.1s">Разработка сайтов под ключ</p>
 					</div>
 					<div class="col-md-4">
 						<div class="social-block">
 							<p>Подпишитесь:</p>
-							<a href="https://www.facebook.com/tsverkovrb" target="_blank"><img src="img/Social/facebook-logo-button.png" alt="facebook"></a>
-							<a href="https://vk.com/tsvetkovrb" target="_blank"><img src="img/Social/vk-social-logotype.png" alt="vk"></a>
-							<a href="http://t.me/tsvetkovrb" target="_blank"><img src="img/Social/telegram-symbol.png" alt="telegram"></a>
-							<a href="https://www.youtube.com/channel/UC_M7nSvx-W5WKwnysTHIT9w?view_as=subscriber" target="_blank"><img src="img/Social/youtube-symbol.png" alt="youtube"></a>
+							<a href="https://www.facebook.com/tsverkovrb" target="_blank"><img class="wow wobble" data-wow-delay="0.8s" src="img/Social/facebook-logo-button.png" alt="facebook"></a>
+							<a href="https://vk.com/tsvetkovrb" target="_blank"><img class="wow wobble" data-wow-delay="0.9s" src="img/Social/vk-social-logotype.png" alt="vk"></a>
+							<a href="http://t.me/tsvetkovrb" target="_blank"><img class="wow wobble" data-wow-delay="1s" src="img/Social/telegram-symbol.png" alt="telegram"></a>
+							<a href="https://www.youtube.com/channel/UC_M7nSvx-W5WKwnysTHIT9w?view_as=subscriber" target="_blank"><img class="wow wobble" data-wow-delay="1.1s" src="img/Social/youtube-symbol.png" alt="youtube"></a>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="footer-cta-block">
-							<p class="footer-cta">Напишите мне:</p>
-							<a href="https://tsvetkovv22@gmail.com" target="_blank" class="footer-button">Написать</a>
+							<p class="footer-cta wow bounce" data-wow-delay="1.3s">Напишите мне:</p>
+							<a href="https://tsvetkovv22@gmail.com" target="_blank" class="footer-button wow bounce" data-wow-delay="1.3s">Написать</a>
 						</div>
 					</div>
 				</div>
@@ -94,5 +95,9 @@
 			</div>
 			<!-- /.container -->
 		</footer>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>
