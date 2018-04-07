@@ -26,6 +26,8 @@ header {
 	margin-top: 20px;
 }
 .header-button {
+	display: inline-block;
+	text-decoration: none;
 	font-size: 18px;
 	font-weight: 700;
 	margin-top: 33px;
@@ -51,7 +53,7 @@ header small {
 
 /*Секция портфолио*/
 .portfolio {
-	padding: 44px 160px 71px;
+	padding: 44px 0 71px;
 	background-color: #fff;
 }
 .portfolio-block {
@@ -140,6 +142,7 @@ footer {
 	border: 1px solid #fff;
 	border-radius: 50px;
 	background-color: transparent;
+	text-decoration: none;
 }
 .footer-button:hover {
 	color: black;
