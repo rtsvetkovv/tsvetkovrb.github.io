@@ -168,10 +168,10 @@ footer {
 		font-size: 14px;
 	}
 	.social-block a {
-		margin: 0 5px;
+		margin: 0 10px;
 	}
 	.social-block img {
-		width: 30px;
+		width: 40px;
 	}
 	.footer-button {
 		font-size: 14px;
@@ -193,5 +193,11 @@ footer {
 	.footer-author,
 	.footer-text {
 		text-align: center;
+	}
+	.portfolio {
+		padding-bottom: 15px;
+	}
+	footer {
+		padding-bottom: 50px;
 	}
 }
