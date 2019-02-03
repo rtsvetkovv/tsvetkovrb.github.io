@@ -1,15 +1,16 @@
 window.sr = ScrollReveal();
-sr.reveal(".anim");
+sr.reveal('.anim');
 
-$(document).ready(function() {
-  //  Клик по кнопке меню
-  $(".menu-btn").on("click", function() {
-    $(this).toggleClass("menu-btn_active");
-    $(".menu").toggleClass("menu_active");
-  });
-  //  Клик по ссылке в меню
-  $(".menu-item").on("click", function() {
-    $(".menu-btn").toggleClass("menu-btn_active");
-    $(".menu").toggleClass("menu_active");
-  });
+const menuButton = document.querySelector('.menu-btn');
+const menuItem = document.querySelector('.menu-item');
+const menu = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('menu-btn_active');
+  menu.classList.toggle('menu_active');
+});
+
+menu.addEventListener('click', () => {
+  menuButton.classList.remove('menu-btn_active');
+  menu.classList.remove('menu_active');
 });
