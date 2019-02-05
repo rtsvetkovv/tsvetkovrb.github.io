@@ -2,7 +2,7 @@ window.sr = ScrollReveal();
 sr.reveal('.anim');
 
 const menuButton = document.querySelector('.menu-btn');
-const menuItem = document.querySelector('.menu-item');
+const menuItems = document.querySelectorAll('.menu-item');
 const menu = document.querySelector('.menu');
 
 menuButton.addEventListener('click', () => {
@@ -10,7 +10,9 @@ menuButton.addEventListener('click', () => {
   menu.classList.toggle('menu_active');
 });
 
-menu.addEventListener('click', () => {
-  menuButton.classList.remove('menu-btn_active');
-  menu.classList.remove('menu_active');
+Array.from(menuItems).forEach(el => {
+  el.addEventListener('click', () => {
+    menuButton.classList.remove('menu-btn_active');
+    menu.classList.remove('menu_active');
+  });
 });
